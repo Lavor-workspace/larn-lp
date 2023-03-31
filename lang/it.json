@@ -1,0 +1,229 @@
+{
+    "language":{
+        "name":"it",
+        "fullname":"Italiano",
+        "url":"/it",
+        "selector":{
+            "first":{
+                "name":"es",
+                "fullname":"Español",
+                "url":"/es"
+            },
+            "second":{
+                "name":"gb",
+                "fullname":"English",
+                "url":"/en"
+            }
+        },
+        "keywords":"larn, gestore, repository, pagine web, offline, documentazione, framework, linguaggi di programmazione, visualizzazione, offline, senza internet, blink, piattaforme, selfhosting, open source",
+    "description":"Larn è un'applicazione open source che consente di gestire repository di pagine web scaricate per la visualizzazione offline, progettata appositamente per la documentazione di linguaggi di programmazione e framework. L'applicazione è compatibile con molteplici piattaforme e offre l'opzione di self-hosting."
+    },
+    "navigation":{
+        "home":"Home",
+        "services":"Servizi",
+        "pricing":"Prezzi",
+        "contact":"Contatto"
+        },
+            "hero":{
+            "overtitle":"Gestore di conoscenza offline",
+            "title":"Un nuovo modo di imparare",
+            "subtitle":"Larn è un gestore di pagine web offline, focalizzato sulla conoscenza, per facilitare l'accesso a documentazioni senza internet.",
+            "download":"Scarica",
+            "videolink":"https://www.youtube.com/watch?v=tAU0FX1d044"
+            },
+            "features":{
+                "title":"Un nuovo modo di imparare ovunque",
+                "items":{
+                    "first":{
+                        "title":"Open source",
+                        "subtitle":"Larn è open source, quindi chiunque può collaborare con lo sviluppo e aggiungere nuovi componenti."
+                    },
+                    "second":{
+                        "title":"Self hosting",
+                        "subtitle":"Essendo open source, chiunque può distribuirlo dove vuole senza limiti nelle funzionalità."
+                    },
+                    "third":{
+                        "title":"Nativo",
+                        "subtitle":"Larn non interviene nelle pagine che archivia, hanno lo stesso contenuto e design della pagina ufficiale."
+                    },
+                    "fourth":{
+                        "title":"Versatilità",
+                        "subtitle":"Blink offre la possibilità di hostare Larn gratuitamente in modo limitato o completo e a pagamento per non dover gestire il self hosting."
+                    }
+                    }
+                },
+                "services":{
+                "title":"Vantaggi di Larn rispetto ad altre applicazioni",
+                "items":{
+                    "first":{
+                        "title":"Comodità",
+                        "subtitle":"Con Larn puoi visualizzare le informazioni che vuoi o hai bisogno in modo nativo, non trascrive il testo in un formato diverso dall'HTML, CSS e JavaScript originale."
+                    },
+                    "second":{
+                        "title":"Sicurezza",
+                        "subtitle":"Larn è open source, quindi puoi sapere con certezza ciò che stai scaricando, e allo stesso tempo non raccogliamo alcun tipo di informazione dai nostri utenti Free, Plus o Permanent."
+                    },
+                    "third":{
+                        "title":"Universale",
+                        "subtitle":"Larn può essere compilato per una vasta gamma di piattaforme, quindi puoi usarlo ovunque desideri e, se non esiste, puoi crearlo."
+                }
+            }
+        },
+    "application":{
+        "title":"Home",
+        "content":"Servizi"
+    },
+    "pricing":{
+        "title":"Diverse modalità per utilizzare Larn",
+        "items":{
+            "first":{
+                "name":"Selfhosting",
+                "price":"Libero",
+                "items":{
+                    "first":{
+                        "title":"Tutte le caratteristiche"
+
+                    },
+                    "second":{
+                        "title":"Repertorio di pagine illimitato"
+
+                    },
+                    "third":{
+                        "title":"Gruppi illimitati"
+
+                    },
+                    "fourth":{
+                        "title":"Crea e pubblica i tuoi propri repository"
+
+                    }
+                },
+                "get":"Vai a Github"
+            },
+            "second":{
+                "name":"Gratuito",
+                "price":"Gratuito",
+                "items":{
+                    "first":{
+                        "title":"Caratteristiche essenziali"
+
+                    },
+                    "second":{
+                        "title":"Accesso illimitato ai repository di Blink"
+
+                    },
+                    "third":{
+                        "title":"Gruppi fino a 40 utenti"
+
+                    },
+                    "fourth":{
+                        "title":"Accesso ai repository aperti"
+
+                    }
+                },
+                "get":"Ottieni"
+            },
+            "third":{
+                "name":"Plus",
+                "price":"3€",
+                "month":"Mese",
+                "items":{
+                    "first":{
+                        "title":"Tutte le caratteristiche"
+
+                    },
+                    "second":{
+                        "title":"Accesso illimitato ai repository di Blink e repository esterni"
+
+                    },
+                    "third":{
+                        "title":"Gruppi illimitati"
+
+                    },
+                    "fourth":{
+                        "title":"Crea e pubblica i tuoi propri repository"
+
+                    }
+                },
+                "get":"Ottieni"
+            }
+        }
+    },
+    "customers":{
+        "title":"Raccomandazioni da chi l'ha già provato",
+        "opinions":{
+            "first":{
+                "title":"",
+                "opinion":""
+            },
+            "second":{
+                "title":"",
+                "opinion":""
+            },
+            "third":{
+                "title":"",
+                "opinion":""
+            },
+            "fourth":{
+                "title":"",
+                "opinion":""
+            }
+        }
+    },
+    "available":{
+        "title":"Provalo gratuitamente Larn",
+        "subtitle":"Approfitta e semplifica il tuo accesso alla conoscenza come mai prima"
+    },
+    "collaborate":{
+        "title":"Collabora allo sviluppo di Larn",
+        "contact":"Vai a Github"
+    },
+    "footer":{
+        "slogan":"Larn, il modo migliore di gestire la conoscenza",
+        "columns":{
+            "first":{
+                "name":"Noi",
+                "items":{
+                    "first":{
+                        "title":"Su Blink"
+                    },
+                    "second":{
+                        "title":"Valori"
+                    },
+                    "third":{
+                        "title":"Finanziamento"
+                    },
+                    "fourth":{
+                        "title":"Sviluppi"
+                    },
+                    "fifth":{
+                        "title":"Raccomandazioni"
+                    }
+                }
+            },
+            "second":{
+                "name":"Supporto",
+                "items":{
+                    "first":{
+                        "title":"Aiuto e supporto"
+                    },
+                    "second":{
+                        "title":"Segnala un errore"
+                    },
+                    "third":{
+                        "title":"Termini e condizioni"
+                    },
+                    "fourth":{
+                        "title":"Larn roadmap"
+                    },
+                    "fifth":{
+                        "title":"FAQs"
+                    }
+                }
+            }
+        },
+        "newsletter":{
+            "subtitle":"Ricevi aggiornamenti e novità su Larn",
+            "email":"Indirizzo email"
+        }
+    }
+}
