@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\App;
 |
 */
 
+Illuminate\Support\Facades\URL::defaults(['locale' => app('locale-for-client')]);
+
+// redirect the home page route to a specific locale
+Route::get('/', function () {
+    return redirect(app('locale-for-client'));
+});
+
 Route::get('/en', function () {
     App::setLocale('en');
 

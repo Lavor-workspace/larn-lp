@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Facade;
 
 return [
 
+
+    'locales' => ['en', 'es', 'it'],
+    'locales_text_display' => ['en' => 'English', 'es' => 'Español', 'it' => 'Italiano'],
+    'fallback_locale' => 'en',
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -15,7 +19,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'larn-lp'),
 
     /*
     |--------------------------------------------------------------------------
