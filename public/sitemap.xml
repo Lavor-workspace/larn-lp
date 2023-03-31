@@ -8,15 +8,18 @@
 
 
 <url>
-  <loc>https:/larn.ar/en</loc>
+  <loc>https://larn.ar/en</loc>
+  <lastmod>2023-03-31T22:32:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https:/larn.ar/it</loc>
+  <loc>https://larn.ar/es</loc>
+  <lastmod>2023-03-31T22:32:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https:/larn.ar/es</loc>
+  <loc>https://larn.ar/it</loc>
+  <lastmod>2023-03-31T22:32:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
