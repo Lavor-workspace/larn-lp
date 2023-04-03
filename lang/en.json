@@ -1,229 +1,266 @@
 {
-    "language":{
-        "name":"gb",
-        "fullname":"English",
-        "url":"/en",
-        "selector":{
-            "first":{
-                "name":"es",
-                "fullname":"Español",
-                "url":"/es"
+    "language": {
+        "name": "gb",
+        "lang": "en",
+        "fullname": "English",
+        "url": "/en",
+        "selector": {
+            "first": {
+                "name": "es",
+                "fullname": "Español",
+                "url": "/es"
             },
-            "second":{
-                "name":"it",
-                "fullname":"Italiano",
-                "url":"/it"
+            "second": {
+                "name": "it",
+                "fullname": "Italiano",
+                "url": "/it"
             }
         },
-        "keywords":"larn, manager, repositories, web pages, offline, documentation, frameworks, programming languages, visualization, offline, without internet, blink, platforms, selfhosting, open source",
-        "description":"Larn is an open source application that allows managing repositories of downloaded web pages for offline viewing, designed especially for documentation of programming languages and frameworks. The application is compatible with multiple platforms and offers the option of self-hosting."
+        "keywords": "larn, manager, repositories, web pages, offline, documentation, frameworks, programming languages, visualization, offline, without internet, Blinke, platforms, selfhosting, open source",
+        "description": "Larn is an open source application that allows managing repositories of downloaded web pages for offline viewing, designed especially for documentation of programming languages and frameworks. The application is compatible with multiple platforms and offers the option of self-hosting."
     },
-    "navigation":{
-        "home":"Home",
-        "services":"Services",
-        "pricing":"Pricing",
-        "contact":"Contact"
+    "navigation": {
+        "home": "Home",
+        "services": "Services",
+        "pricing": "Pricing",
+        "contact": "Contact"
     },
-    "hero":{
-        "overtitle":"Offline knowledge manager",
-        "title":"A new way to learn",
-        "subtitle":"Larn is an offline web pages manager, focused on knowledge, to facilitate access to documentations without internet.",
-        "download":"Download",
-        "videolink":"https://www.youtube.com/watch?v=tAU0FX1d044"
+    "hero": {
+        "overtitle": "Offline knowledge manager",
+        "title": "A new way to learn",
+        "subtitle": "Larn is an offline web pages manager, focused on knowledge, to facilitate access to documentations without internet.",
+        "download": "Download",
+        "videolink": "https://www.youtube.com/watch?v=tAU0FX1d044"
     },
-    "features":{
-        "title":"A new way to learn anywhere",
-        "items":{
-            "first":{
-                "title":"Open source",
-                "subtitle":"Larn is open source, so anyone can collaborate with its development and add new components."
+    "features": {
+        "title": "A new way to learn anywhere",
+        "items": {
+            "first": {
+                "title": "Open source",
+                "subtitle": "Larn is open source, so anyone can collaborate with its development and add new components."
             },
-            "second":{
-                "title":"Self hosting",
-                "subtitle":"Being open source, anyone can deploy it wherever they want without any limits on functionality."
+            "second": {
+                "title": "Self hosting",
+                "subtitle": "Being open source, anyone can deploy it wherever they want without any limits on functionality."
             },
-            "third":{
-                "title":"Native",
-                "subtitle":"Larn does not interfere with the pages it stores, they have the same content and design as the official page."
+            "third": {
+                "title": "Native",
+                "subtitle": "Larn does not interfere with the pages it stores, they have the same content and design as the official page."
             },
-            "fourth":{
-                "title":"Versatility",
-                "subtitle":"Blink offers the possibility of limited or complete free and paid hosting of Larn so you don't have to deal with self-hosting."
+            "fourth": {
+                "title": "Versatility",
+                "subtitle": "Blinke offers the possibility of limited or complete free and paid hosting of Larn so you don't have to deal with self-hosting."
             }
         }
     },
-    "services":{
-        "title":"Advantages of Larn over other applications",
-        "items":{
-            "first":{
-                "title":"Comfort",
-                "subtitle":"With Larn you can view the information you want or need natively, it does not transcribe text to another format that is not original HTML, CSS and Javascript."
+    "services": {
+        "title": "Advantages of Larn over other applications",
+        "items": {
+            "first": {
+                "title": "Comfort",
+                "subtitle": "With Larn you can view the information you want or need natively, it does not transcribe text to another format that is not original HTML, CSS and Javascript."
             },
-            "second":{
-                "title":"Security",
-                "subtitle":"Larn is open source, so you can know exactly what you are downloading, at the same time we do not collect any information from our Free, Plus or Permanent users."
+            "second": {
+                "title": "Security",
+                "subtitle": "Larn is open source, so you can know exactly what you are downloading, at the same time we do not collect any information from our Free, Plus or Permanent users."
             },
-            "third":{
-                "title":"Universal",
-                "subtitle":"Larn can be compiled for a diverse amount of platforms, so you can use it wherever you want, and if it doesn't exist, you can create it."
+            "third": {
+                "title": "Universal",
+                "subtitle": "Larn can be compiled for a diverse amount of platforms, so you can use it wherever you want, and if it doesn't exist, you can create it."
             }
         }
     },
-    "application":{
-        "title":"Home",
-        "content":"Services"
+    "application": {
+        "title": "Home",
+        "content": "Services"
     },
-    "pricing":{
-        "title":"Different ways to use Larn",
-        "items":{
-            "first":{
-                "name":"Selfhosting",
-                "price":"Free",
-                "items":{
-                    "first":{
-                        "title":"All features"
-
+    "pricing": {
+        "title": "Different ways to use Larn",
+        "items": {
+            "first": {
+                "name": "Selfhosting",
+                "price": "Open",
+                "items": {
+                    "first": {
+                        "title": "All features"
                     },
-                    "second":{
-                        "title":"Unlimited page repertoire"
-
+                    "second": {
+                        "title": "Unlimited page repertoire"
                     },
-                    "third":{
-                        "title":"Unlimited groups"
-
+                    "third": {
+                        "title": "Unlimited groups"
                     },
-                    "fourth":{
-                        "title":"Create and publish your own repositories"
-
+                    "fourth": {
+                        "title": "Create and publish your own repositories"
                     }
                 },
-                "get":"Go to Github"
+                "get": "Go to Github"
             },
-            "second":{
-                "name":"Free",
-                "price":"Free",
-                "items":{
-                    "first":{
-                        "title":"Essential features"
-
+            "second": {
+                "name": "Free",
+                "price": "Free",
+                "items": {
+                    "first": {
+                        "title": "Essential features"
                     },
-                    "second":{
-                        "title":"Unlimited access to Blink repositories"
-
+                    "second": {
+                        "title": "Unlimited access to Blinke repositories"
                     },
-                    "third":{
-                        "title":"Groups of up to 40 users"
-
+                    "third": {
+                        "title": "Groups of up to 40 users"
                     },
-                    "fourth":{
-                        "title":"Access to open repositories"
-
+                    "fourth": {
+                        "title": "Access to open repositories"
                     }
                 },
-                "get":"Get"
+                "get": "Get"
             },
-            "third":{
-                "name":"Plus",
-                "price":"$3",
-                "month":"Month",
-                "items":{
-                    "first":{
-                        "title":"All features"
-
+            "third": {
+                "name": "Plus",
+                "price": "$3",
+                "month": "Month",
+                "items": {
+                    "first": {
+                        "title": "All features"
                     },
-                    "second":{
-                        "title":"Unlimited access to Blink and external repositories"
-
+                    "second": {
+                        "title": "Unlimited access to Blinke and external repositories"
                     },
-                    "third":{
-                        "title":"Unlimited groups"
-
+                    "third": {
+                        "title": "Unlimited groups"
                     },
-                    "fourth":{
-                        "title":"Create and publish your own repositories"
-
+                    "fourth": {
+                        "title": "Create and publish your own repositories"
                     }
                 },
-                "get":"Get"
+                "get": "Get"
             }
         }
     },
-    "customers":{
-        "title":"Recommendations from those who have already tried it",
-        "opinions":{
-            "first":{
-                "title":"",
-                "opinion":""
+    "faq": {
+        "first": {
+            "title": "Can Larn manage more than just offline websites?",
+            "subtitle": "Yes, we plan on more functionalities.",
+            "content": "We plan on helping manage personal books to have them on all your devices, video courses, quick deployment of projects and APIs to help sites natively be offline. Among other features that anyone can suggest or develop."
+        },
+        "second": {
+            "title": "What is the difference between self-hosting and Plus/Permanent?",
+            "subtitle": "A few, but due to technical limitations.",
+            "content": "Plus offers all the features in an annual/monthly subscription model, but for large groups (such as companies or organizations) we propose custom models to streamline use in groups of many people, such as diversified access levels in various united groups, this combining Larn with other utilities such as Learth. Permanent offers the same as Plus except for large extensions of features, which with a permanent license can be chosen to finance based on the calculation of the cost of deploying that new functionality on our servers. Self-hosting Larn allows you to have all the functionalities and customize Larn as you wish, combining it with whichever tools you want, we can achieve something similar without conflicts by contacting us privately if you are an organization."
+        },
+        "third": {
+            "title": "Can I help distribute Larn on my own?",
+            "subtitle": "Yes! Larn is completely free.",
+            "content": "You can charge for deploying Larn in organizations or for distributing it, we offer everything necessary to use Larn, but we do not take responsibility for what the rest does with it, therefore you have complete freedom to do whatever you want with Larn, however neither Blinke nor its collaborators will be responsible for misuse."
+        },
+        "fourth": {
+            "title": "What about privacy in Free, Plus, and Permanent?",
+            "subtitle": "All the information we collect is customizable.",
+            "content": "We offer different functionalities that require certain personal information, such as Token Registry which collects the public IP address to prevent cookie theft, or certain metrics that help us understand more easily the use that users give to Larn. ALL functionalities that require personal information are disabled by default, you can use Larn without giving any personal information being completely anonymous. You can request any information we store about you, you can clean it at any time and know how it is stored and the security methods."
+        }
+    },
+    "customers": {
+        "title": "Recommendations from those who have already tried it",
+        "opinions": {
+            "first": {
+                "title": "",
+                "opinion": ""
             },
-            "second":{
-                "title":"",
-                "opinion":""
+            "second": {
+                "title": "",
+                "opinion": ""
             },
-            "third":{
-                "title":"",
-                "opinion":""
+            "third": {
+                "title": "",
+                "opinion": ""
             },
-            "fourth":{
-                "title":"",
-                "opinion":""
+            "fourth": {
+                "title": "",
+                "opinion": ""
             }
         }
     },
-    "available":{
-        "title":"Try Larn for free now",
-        "subtitle":"Take advantage and facilitate your access to knowledge like never before"
+    "available": {
+        "title": "Try Larn for free now",
+        "subtitle": "Take advantage and facilitate your access to knowledge like never before"
     },
-    "collaborate":{
-        "title":"Collaborate with the development of Larn",
-        "contact":"Go to Github"
+    "contact": {
+        "title": "Contact us",
+        "info": {
+            "first": {
+                "title": "Buenos Aires City, Argentina"
+            },
+            "second": {
+                "title": "+54 9 11 2407-9549",
+                "subtitle": "Contact by WhatsApp"
+            },
+            "third": {
+                "title": "contact@larn.ar",
+                "subtitle": "Larn Enquiries"
+            },
+            "fourth": {
+                "title": "blinke@maximoprandi.me",
+                "subtitle": "Development enquiries"
+            }
+        },
+        "form": {
+            "message": "Tell us your inquiry",
+            "name": "Name",
+            "subject": "Insert your inquiry",
+            "send": "Send"
+        }
     },
-    "footer":{
-        "slogan":"Larn, the best way to manage knowledge",
-        "columns":{
-            "first":{
-                "name":"About us",
-                "items":{
-                    "first":{
-                        "title":"About Blink"
+    "collaborate": {
+        "title": "Collaborate with the development of Larn",
+        "contact": "Go to Github"
+    },
+    "footer": {
+        "slogan": "Larn, the best way to manage knowledge",
+        "columns": {
+            "first": {
+                "name": "About us",
+                "items": {
+                    "first": {
+                        "title": "About Blinke"
                     },
-                    "second":{
-                        "title":"Values"
+                    "second": {
+                        "title": "Values"
                     },
-                    "third":{
-                        "title":"Funding"
+                    "third": {
+                        "title": "Funding"
                     },
-                    "fourth":{
-                        "title":"Developments"
+                    "fourth": {
+                        "title": "Developments"
                     },
-                    "fifth":{
-                        "title":"Recommendations"
+                    "fifth": {
+                        "title": "Recommendations"
                     }
                 }
             },
-            "second":{
-                "name":"Support",
-                "items":{
-                    "first":{
-                        "title":"Help and support"
+            "second": {
+                "name": "Support",
+                "items": {
+                    "first": {
+                        "title": "Help and support"
                     },
-                    "second":{
-                        "title":"Report an issue"
+                    "second": {
+                        "title": "Report an issue"
                     },
-                    "third":{
-                        "title":"Terms and conditions"
+                    "third": {
+                        "title": "Terms and conditions"
                     },
-                    "fourth":{
-                        "title":"Larn roadmap"
+                    "fourth": {
+                        "title": "Larn roadmap"
                     },
-                    "fifth":{
-                        "title":"FAQs"
+                    "fifth": {
+                        "title": "FAQs"
                     }
                 }
             }
         },
-        "newsletter":{
-            "subtitle":"Receive updates and news about Larn",
-            "email":"Email address"
+        "newsletter": {
+            "subtitle": "Receive updates and news about Larn",
+            "email": "Email address"
         }
     }
 }

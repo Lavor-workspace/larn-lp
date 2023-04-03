@@ -1,4 +1,4 @@
-<html lang="{{__('language')['name']}}">
+<html lang="{{__('language')['lang']}}">
 <head>
     <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,16 +10,16 @@
 <meta name="keywords" content="{{__('language')['keywords']}}">
 <meta name="robots" content="follow">
 <meta name="title" content="Larn">
-<meta name="copyright" content="Blink">
-<meta name="author" content="Blink">
+<meta name="copyright" content="Blinke">
+<meta name="author" content="Blinke">
 <meta name="twitter:description" content="{{__('language')['description']}}">
 <meta name="twitter:card" content="summary">
-<meta property="og:image" content="assets/img/logo/logo.png">
+<meta property="og:image" content="assets/img/logo/logo.avif">
 <meta name="description" content="{{__('language')['name']}}">
 <meta property="og:type" content="website">
-<meta name="twitter:image" content="assets/img/logo/logo.png">
+<meta name="twitter:image" content="assets/img/logo/logo.avif">
 <meta name="twitter:title" content="Larn">
-<link rel="icon" type="image/avif" sizes="53x55" href="assets/img/logo/logo.png">
+<link rel="icon" type="image/avif" sizes="53x55" href="assets/img/logo/logo.avif">
 
 <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -33,13 +33,26 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
 
+    <script src="assets/js/post.js"></script>
 
-    @livewireStyles
+    <link rel="stylesheet" href="notification.css"></link>
+    <script src="notification.var.js"></script>
+
+    <style>
+        .collapse {
+            visibility: visible  !important;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -49,7 +62,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img style="display: inline" src="assets/img/logo/logo.png" alt="">
+                    <img style="display: inline" src="assets/img/logo/logo.avif" alt="">
                 </div>
             </div>
         </div>
@@ -65,7 +78,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-2">
                             <div class="logo">
-                                <a href="/"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="/"><img src="assets/img/logo/logo.avif" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
@@ -73,14 +86,16 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li class="active"><a href="index.html">Larn</a></li>
+                                        <li class="active"><a href="/">Larn</a></li>
                                         <li><a href="#features">{{__('navigation')['services']}}</a></li>
                                         <li><a href="#pricing">{{__('navigation')['pricing']}}</a></li>
-                                        <li><a href="contact.html">{{__('navigation')['contact']}}</a></li>
-                                        <li>                                        <div class="container flex justify-center mx-auto">
-                                            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                                        <li><a href="#faq">FAQs</a></li>
+                                        <li><a href="#contact">{{__('navigation')['contact']}}</a></li>
+                                        <li>
+                                            <div class="container flex justify-center mx-auto">
+                                                <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
                                                     <!-- Dropdown toggle button -->
-                                                    <button @mouseover="open = true" class="flex items-center block p-2 rounded-md ">
+                                                    <button @mouseover="open = true" class="flex items-center block rounded-md ">
                                                         <span><span class='fi fi-{{__('language')['name']}}'></span></span>
                                                         <svg class="w-6 h-6 text-white text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                             fill="currentColor">
@@ -105,7 +120,6 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </nav>
@@ -140,13 +154,13 @@
                                         <!-- Hero-btn -->
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="https://github.com/MaximoBrandi/larn" class="btn radius-btn">{{__('hero')['download']}}</a>
                                         <!-- Video Btn -->
-                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video btn radius-btn ani-btn" href="{{__('hero')['videolink']}}"><i class="fas fa-play"></i> Descubre Larn</a>
+                                        {{-- <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video btn radius-btn ani-btn" href="{{__('hero')['videolink']}}"><i class="fas fa-play"></i> Descubre Larn</a> --}}
                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
-                                    <img src="assets/img/hero/hero_right.png" alt="">
+                                    <img src="assets/img/hero/hero_right.avif" alt="">
                                 </div>
                             </div>
                         </div>
@@ -165,13 +179,13 @@
                                         <!-- Hero-btn -->
                                         <a data-animation="fadeInLeft" data-delay="1.0s" href="https://github.com/MaximoBrandi/larn" class="btn radius-btn">{{__('hero')['download']}}</a>
                                         <!-- Video Btn -->
-                                        <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="{{__('hero')['videolink']}}"><i class="fas fa-play"></i></a>
+                                        {{-- <a data-animation="fadeInRight" data-delay="1.0s" class="popup-video video-btn ani-btn" href="{{__('hero')['videolink']}}"><i class="fas fa-play"></i></a> --}}
                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
-                                    <img src="assets/img/hero/hero_right.png" alt="">
+                                    <img src="assets/img/hero/hero_right.avif" alt="">
                                 </div>
                             </div>
                         </div>
@@ -245,7 +259,7 @@
             </div>
             <!-- Shpe -->
             <div class="features-shpae d-none d-lg-block">
-                <img src="assets/img/shape/best-features.png" alt="">
+                <img src="assets/img/shape/best-features.avif" alt="">
             </div>
         </section>
         <!-- Best Features End -->
@@ -347,7 +361,7 @@
                                     <li>{{__('pricing')['items']['second']['items']['third']['title']}}</li>
                                     <li>{{__('pricing')['items']['second']['items']['fourth']['title']}}</li>
                                 </ul>
-                                <a href="services.html" class="btn card-btn1">{{__('pricing')['items']['second']['get']}}</a>
+                                <a href="https://learth.maximoprandi.tech/register/larn" class="btn card-btn1">{{__('pricing')['items']['second']['get']}}</a>
                             </div>
                         </div>
                     </div>
@@ -364,7 +378,7 @@
                                     <li>{{__('pricing')['items']['third']['items']['third']['title']}}</li>
                                     <li>{{__('pricing')['items']['third']['items']['fourth']['title']}}</li>
                                 </ul>
-                                <a href="services.html" class="btn card-btn1">{{__('pricing')['items']['third']['get']}}</a>
+                                <a href="https://learth.maximoprandi.tech/buy/larn" class="btn card-btn1">{{__('pricing')['items']['third']['get']}}</a>
                             </div>
                         </div>
                     </div>
@@ -372,6 +386,77 @@
             </div>
         </div>
         <!-- Pricing Card End -->
+
+        <section id="faq" class="pt-90 pb-90 faq">
+            <div class="container">
+                <div style="height: 50px" class="row d-flex justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-tittle text-center">
+                            <h2>FAQs</h2>
+                        </div>
+                    </div>
+                </div>
+              <!-- ACCORDION CONTENT  -->
+              <div class="row mt-5">
+                <div class="col-md-12">
+                  <div class="accordion" id="accordionExample">
+                    <!-- ACCORDION ITEM 1 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          {{__('faq')['first']['title']}}
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong> {{__('faq')['first']['subtitle']}}</strong>  {{__('faq')['first']['content']}}
+                        </div>
+                      </div>
+                    </div>
+                       <!-- ACCORDION ITEM 2 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            {{__('faq')['second']['title']}}
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong> {{__('faq')['second']['subtitle']}}</strong>  {{__('faq')['second']['content']}}
+                        </div>
+                      </div>
+                    </div>
+                       <!-- ACCORDION ITEM 3 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            {{__('faq')['third']['title']}}
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong> {{__('faq')['third']['subtitle']}}</strong>  {{__('faq')['third']['content']}}
+                        </div>
+                      </div>
+                    </div>
+                       <!-- ACCORDION ITEM 4 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            {{__('faq')['fourth']['title']}}
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong> {{__('faq')['fourth']['subtitle']}}</strong>  {{__('faq')['fourth']['content']}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
         <!-- Available App  Start-->
         <div class="available-app-area">
@@ -383,15 +468,15 @@
                                 <h2>{{__('available')['title']}}</h2>
                                 <p>{{__('available')['subtitle']}}</p>
                                 <div class="app-btn">
-                                    <a href="#" class="app-btn1"><img src="assets/img/shape/app_btn1.png" alt=""></a>
-                                    <a href="#" class="app-btn2"><img src="assets/img/shape/app_btn2.png" alt=""></a>
+                                    <a href="#" class="app-btn1"><img src="assets/img/shape/app_btn1.avif" alt=""></a>
+                                    <a href="#" class="app-btn2"><img src="assets/img/shape/app_btn2.avif" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
                         <div class="app-img">
-                            <img src="assets/img/shape/available-app.png" alt="">
+                            <img src="assets/img/shape/available-app.avif" alt="">
                         </div>
                     </div>
                 </div>
@@ -404,6 +489,85 @@
             </div>
         </div>
         <!-- Available App End-->
+        <!-- ================ contact section start ================= -->
+            <section id="contact" class="contact-section">
+                <div class="container">
+                    <div class="d-none d-sm-block mb-5 pb-4">
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="contact-title">{{__('contact')['title']}}</h2>
+                        </div>
+                        <div class="col-lg-8">
+                            <form class="form-contact contact_form" action="/contact" method="post" id="contactForm">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = '{{__('contact')['form']['message']}}'" placeholder=" {{__('contact')['form']['message']}}"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = '{{__('contact')['form']['name']}}'" placeholder="{{__('contact')['form']['name']}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = '{{__('contact')['form']['subject']}}'" placeholder="{{__('contact')['form']['subject']}}">
+                                        </div>
+                                    </div>
+                                </div>
+                                @foreach ($errors->all() as $error)
+                                    <script>contactpush('{{ $error }}')</script>
+                                @endforeach
+                                {!! HCaptcha::display() !!}
+                                <div class="form-group mt-3">
+                                    <button type="submit" class="button button-contactForm boxed-btn">{{__('contact')['form']['send']}}</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-home"></i></span>
+                                <div class="media-body">
+                                    <h3><a href="https://www.google.com/maps/place/Balvanera,+CABA/">{{__('contact')['info']['first']['title']}}</a></h3>
+                                    <p>Balvanera</p>
+                                </div>
+                            </div>
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                                <div class="media-body">
+                                    <h3><a href="https://wa.me/5491124079549?text=Contact%20WiDi%20Group">{{__('contact')['info']['second']['title']}}</a></h3>
+                                    <p>{{__('contact')['info']['second']['subtitle']}}</p>
+                                </div>
+                            </div>
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-email"></i></span>
+                                <div class="media-body">
+                                    <h3><a href="mailto:contact@larn.ar">{{__('contact')['info']['third']['title']}}</a></h3>
+                                    <p>{{__('contact')['info']['third']['subtitle']}}</p>
+                                </div>
+                            </div>
+                            <div class="media contact-info">
+                                <span class="contact-info__icon"><i class="ti-email"></i></span>
+                                <div class="media-body">
+                                    <h3><a href="mailto:Blinkee@maximoprandi.me">{{__('contact')['info']['fourth']['title']}}</a></h3>
+                                    <p>{{__('contact')['info']['fourth']['subtitle']}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- ================ contact section end ================= -->
         <!-- Say Something Start -->
         <div class="say-something-aera pt-90 pb-90 fix">
             <div class="container">
@@ -440,7 +604,7 @@
                          <div class="single-footer-caption mb-30">
                               <!-- logo -->
                              <div class="footer-logo">
-                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                 <a href="/"><img src="assets/img/logo/logo.avif" alt=""></a>
                              </div>
                              <div class="footer-tittle">
                                  <div class="footer-pera">
@@ -454,11 +618,11 @@
                             <div class="footer-tittle">
                                 <h4>{{__('footer')['columns']['first']['name']}}</h4>
                                 <ul>
-                                    <li><a href="#">{{__('footer')['columns']['first']['items']['first']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['first']['items']['second']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['first']['items']['third']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['first']['items']['fourth']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['first']['items']['fifth']['title']}}</a></li>
+                                    <li><a href="https://blinke.maximoprandi.tech/">{{__('footer')['columns']['first']['items']['first']['title']}}</a></li>
+                                    <li><a href="https://blinke.maximoprandi.tech/#values">{{__('footer')['columns']['first']['items']['second']['title']}}</a></li>
+                                    <li><a href="https://blinke.maximoprandi.tech/funding">{{__('footer')['columns']['first']['items']['third']['title']}}</a></li>
+                                    <li><a href="https://learth.maximoprandi.tech/projects">{{__('footer')['columns']['first']['items']['fourth']['title']}}</a></li>
+                                    <li><a href="https://blinke.maximoprandi.tech/consulting">{{__('footer')['columns']['first']['items']['fifth']['title']}}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -468,11 +632,11 @@
                             <div class="footer-tittle">
                                 <h4>{{__('footer')['columns']['second']['name']}}</h4>
                                 <ul>
-                                    <li><a href="#">{{__('footer')['columns']['second']['items']['first']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['second']['items']['second']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['second']['items']['third']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['second']['items']['fourth']['title']}}</a></li>
-                                    <li><a href="#">{{__('footer')['columns']['second']['items']['fifth']['title']}}</a></li>
+                                    <li><a href="https://learth.maximoprandi.tech/support">{{__('footer')['columns']['second']['items']['first']['title']}}</a></li>
+                                    <li><a href="https://github.com/MaximoBrandi/larn/issues">{{__('footer')['columns']['second']['items']['second']['title']}}</a></li>
+                                    <li><a href="/policy">{{__('footer')['columns']['second']['items']['third']['title']}}</a></li>
+                                    <li><a href="/roadmap">{{__('footer')['columns']['second']['items']['fourth']['title']}}</a></li>
+                                    <li><a href="#faq">{{__('footer')['columns']['second']['items']['fifth']['title']}}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -486,14 +650,13 @@
                              </div>
                              <!-- Form -->
                              <div class="footer-form">
-                                 <div id="mc_embed_signup">
-                                     <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
-                                         <input type="email" name="email" id="newsletter-form-email" placeholder=" {{__('footer')['newsletter']['email']}} " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '">
-                                         <div class="form-icon">
-                                             <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm"><img src="assets/img/shape/form_icon.png" alt=""></button>
-                                         </div>
-                                         <div class="mt-10 info"></div>
-                                     </form>
+                                 <div>
+                                     <form action="javascript:void(0)" method="post">
+                                        <input type="email" name="email" id="newsletter" placeholder=" {{__('footer')['newsletter']['email']}} " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Email Address '">
+                                        <div class="form-icon">
+                                            <button onclick="newsletterfunct('{{csrf_token()}}')" class="email_icon newsletter-submit button-contactForm"><img src="assets/img/shape/form_icon.avif" alt=""></button>
+                                        </div>
+                                    </form>
                                  </div>
                              </div>
                             </div>
@@ -505,7 +668,7 @@
                     <div class="col-xl-12 ">
                         <div class="footer-copy-right">
                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <script>document.write(new Date().getFullYear());</script> Larn by <a href="#">Blink</a> | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <script>document.write(new Date().getFullYear());</script> Larn by <a href="#">Blinke</a> | <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>
@@ -522,6 +685,10 @@
 		<!-- All JS Custom Plugins Link Here here -->
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
+        <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		<!-- Jquery, Popper, Bootstrap -->
 		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="./assets/js/popper.min.js"></script>
@@ -532,8 +699,6 @@
 		<!-- Jquery Slick , Owl-Carousel Plugins -->
         <script src="./assets/js/owl.carousel.min.js"></script>
         <script src="./assets/js/slick.min.js"></script>
-        <!-- Date Picker -->
-        <script src="./assets/js/gijgo.min.js"></script>
 		<!-- One Page, Animated-HeadLin -->
         <script src="./assets/js/wow.min.js"></script>
 		<script src="./assets/js/animated.headline.js"></script>
@@ -544,17 +709,10 @@
         <script src="./assets/js/jquery.nice-select.min.js"></script>
 		<script src="./assets/js/jquery.sticky.js"></script>
 
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-
 		<!-- Jquery Plugins, main Jquery -->
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
 
-    @livewireScripts
+        {!! HCaptcha::script() !!}
 </body>
 </html>

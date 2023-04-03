@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\App;
 
@@ -35,4 +36,12 @@ Route::get('/{locale}', function (string $locale) {
     App::setLocale($locale);
 
     return view('index');
+});
+
+Route::controller(Controller::class)->group(function () {
+
+    Route::post('/contact', 'contact');
+
+    Route::post('/newsletter', 'newsletter');
+
 });

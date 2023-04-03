@@ -1,6 +1,7 @@
 {
     "language":{
         "name":"it",
+        "lang":"it",
         "fullname":"Italiano",
         "url":"/it",
         "selector":{
@@ -15,7 +16,7 @@
                 "url":"/en"
             }
         },
-        "keywords":"larn, gestore, repository, pagine web, offline, documentazione, framework, linguaggi di programmazione, visualizzazione, offline, senza internet, blink, piattaforme, selfhosting, open source",
+        "keywords":"larn, gestore, repository, pagine web, offline, documentazione, framework, linguaggi di programmazione, visualizzazione, offline, senza internet, Blinke, piattaforme, selfhosting, open source",
     "description":"Larn è un'applicazione open source che consente di gestire repository di pagine web scaricate per la visualizzazione offline, progettata appositamente per la documentazione di linguaggi di programmazione e framework. L'applicazione è compatibile con molteplici piattaforme e offre l'opzione di self-hosting."
     },
     "navigation":{
@@ -48,7 +49,7 @@
                     },
                     "fourth":{
                         "title":"Versatilità",
-                        "subtitle":"Blink offre la possibilità di hostare Larn gratuitamente in modo limitato o completo e a pagamento per non dover gestire il self hosting."
+                        "subtitle":"Blinke offre la possibilità di hostare Larn gratuitamente in modo limitato o completo e a pagamento per non dover gestire il self hosting."
                     }
                     }
                 },
@@ -108,7 +109,7 @@
 
                     },
                     "second":{
-                        "title":"Accesso illimitato ai repository di Blink"
+                        "title":"Accesso illimitato ai repository di Blinke"
 
                     },
                     "third":{
@@ -132,7 +133,7 @@
 
                     },
                     "second":{
-                        "title":"Accesso illimitato ai repository di Blink e repository esterni"
+                        "title":"Accesso illimitato ai repository di Blinke e repository esterni"
 
                     },
                     "third":{
@@ -146,6 +147,28 @@
                 },
                 "get":"Ottieni"
             }
+        }
+    },
+    "faq": {
+        "first": {
+            "title": "Larn sarà in grado di gestire qualcosa oltre ai siti web offline?",
+            "subtitle": "Sì, stiamo pianificando ulteriori funzionalità.",
+            "content": "Pensiamo di aiutare a gestire libri personali per averli su tutti i tuoi dispositivi, videocorsi, distribuzione rapida di progetti e API per aiutare i siti a essere offline in modo nativo. Tra le altre caratteristiche che chiunque può suggerire o sviluppare."
+        },
+        "second": {
+            "title": "Qual è la differenza tra selfhosting e Plus/Permanent?",
+            "subtitle": "Pochi, ma per limitazioni tecniche.",
+            "content": "Plus offre tutte le funzionalità in un modello di abbonamento annuale/mensile, tuttavia per gruppi grandi (come aziende o organizzazioni) proponiamo modelli personalizzati per agevolare l'uso in gruppi di molte persone, come livelli di accesso diversificati in vari gruppi uniti, unendo Larn ad altre utilità come Learth. Permanent offre lo stesso di Plus, ad eccezione di grandi estensioni di funzionalità, che con una licenza permanente possono essere finanziate sulla base del calcolo del costo della distribuzione di quella nuova funzionalità sui nostri server. Selfhosting di Larn consente di avere tutte le funzionalità e personalizzare Larn come desideri, unendolo alle eventuali strumenti che desideri, possiamo raggiungere un risultato simile senza conflitti contattandoci privatamente se sei un'organizzazione."
+        },
+        "third": {
+            "title": "Posso aiutare a distribuire Larn per conto mio?",
+            "subtitle": "Sì! Larn è completamente libero.",
+            "content": "Puoi addebitare per distribuire Larn in organizzazioni o per distribuirlo, offriamo tutto il necessario per utilizzare Larn, ma non ci assumiamo la responsabilità di ciò che gli altri fanno con esso, quindi hai completa libertà di fare ciò che vuoi con Larn, tuttavia né Blinke né i suoi collaboratori si assumono la responsabilità di un uso improprio."
+        },
+        "fourth": {
+            "title": "Come funziona la privacy in Free, Plus e Permanent?",
+            "subtitle": "Tutte le informazioni che raccogliamo sono personalizzabili.",
+            "content": "Offriamo diverse funzionalità che richiedono alcune informazioni personali, come Token Registry che raccoglie l'indirizzo IP pubblico per prevenire il furto di Cookie di accesso, o alcune metriche che ci aiutano a capire più facilmente l'uso che gli utenti fanno di Larn. TUTTE le funzionalità che richiedono informazioni personali sono disattivate per impostazione predefinita, puoi usare Larn senza fornire alcuna informazione personale e rimanere completamente anonimo. Puoi richiedere qualsiasi informazione che abbiamo memorizzato su di te, puoi cancellarla in qualsiasi momento e conoscere come viene memorizzata e i metodi di sicurezza."
         }
     },
     "customers":{
@@ -173,6 +196,32 @@
         "title":"Provalo gratuitamente Larn",
         "subtitle":"Approfitta e semplifica il tuo accesso alla conoscenza come mai prima"
     },
+    "contact":{
+        "title":"Contattaci",
+        "info":{
+            "first":{
+                "title":"Città di Buenos Aires, Argentina"
+            },
+            "second":{
+                "title":"+54 9 11 2407-9549",
+                "subtitle":"Contatto via WhatsApp"
+            },
+            "third":{
+                "title":"contact@larn.ar",
+                "subtitle":"Richieste di informazioni su Larn"
+            },
+            "fourth":{
+                "title":"blinke@maximoprandi.me",
+                "subtitle":"Richieste di informazioni sullo sviluppo"
+            }
+        },
+        "form":{
+            "message":"Spiega la tua richiesta",
+            "name":"Nome",
+            "subject":"Inserisci la tua richiesta",
+            "send":"Invia"
+        }
+    },
     "collaborate":{
         "title":"Collabora allo sviluppo di Larn",
         "contact":"Vai a Github"
@@ -184,7 +233,7 @@
                 "name":"Noi",
                 "items":{
                     "first":{
-                        "title":"Su Blink"
+                        "title":"Su Blinke"
                     },
                     "second":{
                         "title":"Valori"
